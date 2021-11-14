@@ -1,3 +1,4 @@
+import time
 import requests
 
 username = "THE NAME"
@@ -13,3 +14,4 @@ while True:
         else:
             print("No changes detected, most likely offline...")
     cached = r.text
+    time.sleep(30)
